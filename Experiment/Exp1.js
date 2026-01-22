@@ -1,3 +1,26 @@
+// const a = 3 
+// a = 7 //error not allowed to reassign to const variable.
+// console.log(a)
+
+let b = 100;
+b = 50; // value is changed
+var c = 200;
+c = 100; //value is changed
+console.log("Value of b declared as let:" + b);
+document.writeln("<h3>Value of b declared as let:" + b + "</h3>");
+console.log("Value of c declared as var:" + c);
+document.writeln("<h3>Value of c declared as var:" + c + "</h3><br>");
+
+// var x = 10;
+// var y = 20;
+{
+  var x = 100;
+  var y = 200;
+  console.log(x, y);
+}
+console.log(x, y);
+
+
 // activity 1
 // display student info let studentName, Number studenRoll, String studentEmail
 
@@ -61,8 +84,8 @@ for (let i = 1; i <= 20; i++) {
 // activity 5
 console.log("Activity 5:")
 document.writeln("<br><h2>Activity 5:</h2>")
-let x = 10;
-y = x;
-x = 2001;
-console.log(x, y);
-document.writeln("<h3>"+`${x}`+","+`${y}`+"</h3>")
+let num1 = 10;
+num2 = num1;
+num1 = 2001;
+console.log(num1, num2);
+document.writeln("<h3>"+`${num1}`+","+`${num2}`+"</h3>")
