@@ -18,3 +18,6 @@ console.log(Math.min(36,43,29))
 console.log(Math.max(39,59,70))
 
 //Activity Math.random
+console.log(Math.random())//Returns a pseudorandom number between 0 and 1.
+console.log(Math.random().toExponential())//Returns a string containing a number represented in exponential notation.
+console.log(Math.random().toFixed(3))//Returns a string representing a number in fixed-point notation.

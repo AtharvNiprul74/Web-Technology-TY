@@ -17,3 +17,5 @@ console.log(myTimeStamp/1000)
 
 
 //Activity - how to get proper time
+let currTime = new Date()
+console.log(currTime.toLocaleTimeString()) 
