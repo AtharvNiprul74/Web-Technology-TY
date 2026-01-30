@@ -36,5 +36,8 @@ let score3 = 300
 console.log(Array.of(score1,score2,score3)) //create new array from new values no matters how many.
 
 //Array.of() converts value
+let b = Array.of("A","B","C")
+console.log(b)
 //Array.from() converts itratable
-
+let b1 = "Atharv"
+console.log(Array.from(b1))
