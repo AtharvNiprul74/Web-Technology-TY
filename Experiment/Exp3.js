@@ -51,7 +51,7 @@ switch(day)
         console.log("Tuesday")
         break
     case 3:
-        console.log("Wedensday")
+        console.log("Wednesday")
         break
     case 4:
         console.log("Thursday")
@@ -68,6 +68,18 @@ switch(day)
 
 }
 // How use truthty and falsey value with examples
+let arrayOfTruthyFalsy = [false,0,"",null,undefined,NaN,true,"0",[],{}," ",-1]
+arrayOfTruthyFalsy.forEach(val => {
+    // if(val)
+    //     console.log(`Value is Truthy ${arrayOfTruthyFalsy.at(idx)}.`)
+    // else
+    //     console.log(`Value is Falsy ${arrayOfTruthyFalsy.at(idx)}.`)
+     console.log(
+        val,
+        "is",
+        Boolean(val) ? "Truthy Value." : "Falsy Value."
+    )
+})
 // ternary in js
 let age  = 17
 console.log(`Person is ${age>18?"Eligible for Voting.":"Not Eligible for voting."}`)
@@ -114,12 +126,31 @@ array.forEach(e => console.log(e))
 
 // diff btn for of and for in with example
 // for in loop works on index and for of directly iterate over element in array.
+let newArray = [10,20,30,40,50]
+console.log("For in VS For of.")
+console.log("For in gives Index to traverse:")
+for(let index in newArray)
+{
+    console.log(`${newArray[index]} at ${index} index.`) //gives index here 
+}
+console.log("For of gives element to traverse:")
+for(let element of newArray)
+{
+    console.log(`Element:${element}`)//direct element is accisible 
+}
+
 
 // Write how to use filter and map example 3 in js
 let numberArray = [21,53,23,85,90,22,20,34]
 let newNumberArray1 = numberArray.map(ele => ele*ele)
-console.log(newNumberArray1)
-
+console.log(`Squared Array:${newNumberArray1}`)
 console.log("Even numbers from Array:")
-let filterArray = numberArray.filter(ele => ele%2 == 0).forEach(ele => console.log(ele))
-// console.log(numberArray.)
+numberArray.filter(ele => ele%2 == 0).forEach(ele => console.log(ele))
+
+console.log("Prices After applying 18% GST:")
+let prices = [530,220,102,1290,229,782,900]
+let finalPrices = prices.filter(ele => ele > 500).map(ele => ele+ele*0.18).forEach(e => console.log(`${e.toFixed(2)} Rs/.`))
+
+console.log("Odd Numbers to Even Numbers:")
+let evenOddArray = [31,73,79,65,80,89,47,78]
+let evenArray = evenOddArray.filter(ele => ele%2!==0).map(ele => ele+1).forEach(e => console.log(e))
