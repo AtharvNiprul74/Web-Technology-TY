@@ -1,6 +1,6 @@
 // 1.Diff Arrow fun and simple
-console.log("Activity 1:Difference between Arrow fun function and simple function.")
-document.writeln("<h3>Activity 1:Difference between Arrow fun function and simple function.</h3>")
+console.log("Activity 1:")
+document.writeln("<h3>Activity 1:</h3>")
 function greet(name) {
     console.log(name)
     document.writeln(`${name}<br>`)
@@ -14,8 +14,8 @@ const greet1 = (name) => {
 greet1("DKTE !!")
 
 // 2.What is use of this in arrow and simple
-console.log("Activity 2:What is use of this in arrow function and simple function.")
-document.writeln("<h3>Activity 2:What is use of this in arrow function and simple function.</h3>")
+console.log("Activity 2:")
+document.writeln("<h3>Activity 2:</h3>")
 class Student {
     constructor(name, age) {
         this.name = name
@@ -48,8 +48,8 @@ document.writeln(`Arrow Function Uses Lexical Scope:${typeof(Student.prototype.s
 
 // 3.why we not use this key in arrow
 //becoz arrow function uses the this from the its parent laxical scope
-console.log("Activity 3:Why we not use this keyword in arrow.")
-document.writeln("<h3>Activity 3:Why we not use this keyword in arrow.</h3>")
+console.log("Activity 3:")
+document.writeln("<h3>Activity 3:</h3>")
 class car {
     constructor(car) {
         this.car = car
@@ -67,8 +67,8 @@ console.log("Arrow Function:" + car.prototype.getCarName)//not exist
 document.writeln(`Arrow Function:${car.prototype.getCarName}`)
 
 // Write code for arrow fun with 3 examples
-console.log("Activity 4:Write code with arrow function with 3 examples.")
-document.writeln("<h3>Activity 4:Write code with arrow function with 3 examples.</h3>")
+console.log("Activity 4:")
+document.writeln("<h3>Activity 4:</h3>")
 const getName = (name) => {
     console.log(`Hello ${name}`)
     document.writeln(`Hello ${name}<br>`)
@@ -88,8 +88,8 @@ const addTwo = (n1, n2) => {
 addTwo(5, 5)
 
 // write code for Switch case in js
-console.log("Activity 5:write code for Switch case in Java Script")
-document.writeln("<h3>Activity 5:write code for Switch case in Java Script.</h3>")
+console.log("Activity 5:")
+document.writeln("<h3>Activity 5:</h3>")
 let day = 1
 switch (day) {
     case 0:
@@ -127,8 +127,8 @@ switch (day) {
 
 }
 // How use truthty and falsey value with examples
-console.log("Activity 6:How use truthty and falsey value with examples.")
-document.writeln("<h3>Activity 6:How use truthty and falsey value with examples.</h3>")
+console.log("Activity 6:")
+document.writeln("<h3>Activity 6:</h3>")
 let arrayOfTruthyFalsy = [false, 0, "", null, undefined, NaN, true, "0", [], {}, " ", -1]
 arrayOfTruthyFalsy.forEach(val => {
     console.log(val,"is",Boolean(val) ? "Truthy Value." : "Falsy Value.")
@@ -136,15 +136,15 @@ arrayOfTruthyFalsy.forEach(val => {
 })
 
 // ternary in js
-console.log("Activity 7:Ternary Operator in Java Script.")
-document.writeln("<h3>Activity 7:Ternary Operator in Java Script.</h3>")
+console.log("Activity 7:")
+document.writeln("<h3>Activity 7:</h3>")
 let age = 17
 console.log(`Person is ${age > 18 ? "Eligible for Voting." : "Not Eligible for voting."}`)
 document.writeln(`Person with ${age} age is ${age > 18 ? "Eligible for Voting." : "Not Eligible for voting."}`)
 
 // Write a code for how to use loops in array for all
-console.log("Activity 8:Write code for all loops.")
-document.writeln("<h3>Activity 8:Write code for all loops.</h3>")
+console.log("Activity 8:")
+document.writeln("<h3>Activity 8:</h3>")
 let array = [12, 3, 46, 74, 23, 86, 24]
 console.log("Array using for loop:")
 document.writeln("Array using for loop:")
@@ -200,8 +200,8 @@ array.forEach(e => {
 })
 
 // diff btn for of and for in with example
-console.log("Activity 9:Difference between For..of and For..in.")
-document.writeln("<h3>Activity 9:Difference between For..of and For..in.</h3>")
+console.log("Activity 9:")
+document.writeln("<h3>Activity 9:</h3>")
 // for in loop works on index and for of directly iterate over element in array.
 let newArray = [10, 20, 30, 40, 50]
 console.log("For in VS For of.")
