@@ -69,7 +69,9 @@
         </li>
 
         <li>
-            <img id="tiger" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Tiger" onclick="alert('Clicked')"> <!-- HTML should contains structure,JS should contains logic mixing both is bad practice hard to maintain big projects.  -->
+            <img id="tiger" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Tiger"
+                onclick="alert('Clicked')">
+            <!-- HTML should contains structure,JS should contains logic mixing both is bad practice hard to maintain big projects.  -->
         </li>
 
         <li>
@@ -79,16 +81,41 @@
 </body>
 <script>
     document.getElementById("photoman").onclick = () => alert("Java Script Called.") //select element assign function to event when clicked this function runs. problem only one event can be assigned can not handle mulitple listeners properly.
-    document.getElementById("Nature").addEventListener("click",(e) => { console.log(e) },false)
-    // home activity jQuery,type,timestamp,defalut prevented,target,source element,current target,clientx,y,screen x,y alt key , shift key ,ctrl key,
+    document.getElementById("Nature").addEventListener("click", (e) => { console.log(e) }, false)
     //addEventListener is a JS method used to attach an event handler to an HTML element so that specific function run when a particular event occcurs. 
-    
-    // event bubbling/propagation
-    document.getElementById("images").addEventListener("click",() => console.log("Clicking inside the UL"),true) //false - event goes inner elemnt to element and parent to element. bubbling up (Child -> Parent) true -> (Parent -> Child)
-    document.getElementById("photoshop").addEventListener("click",() => console.log("Clicking on photoshop"))
 
-    document.getElementById("google").addEventListener("click",(e) => { console.log("google Clicked"); e.preventDefault()})
+    // event bubbling/propagation
+    document.getElementById("images").addEventListener("click", () => console.log("Clicking inside the UL"), true) //false - event goes inner elemnt to element and parent to element. bubbling up (Child -> Parent) true -> (Parent -> Child)
+    document.getElementById("photoshop").addEventListener("click", () => console.log("Clicking on photoshop"))
+
+    document.getElementById("google").addEventListener("click", (e) => { console.log("google Clicked"); e.preventDefault() })
+
+    document.querySelectorAll("li").forEach(li => {
+        li.addEventListener("click", () => {
+            li.remove()
+        })
+    })
+
+    // document.getElementById("images").addEventListener("click", (li) => {
+    //     if (li.target.tagName === "IMG") {
+    //         li.target.parentElement.remove()
+    //     }
+    // })
 </script>
+
 </html>
 
 <!-- Home activity remove the image after click -->
+<!-- 
+home activity 
+jQuery - A JavaScript library that simplifies DOM, events, and AJAX with less code. $(#btn).click(()=> log("Clicked")))
+type - which type of event.
+timestamp - return time of event occurs in ms.
+defalut prevented - preventDefault() stops the browser’s default behaviour for that event.
+target - it returns exact HTML element.
+source element - same as target used in old browsers.
+current target - who is handling the event it is may be parent
+clientx,y - They give the mouse position inside the browser’s visible area (viewport).
+screen x,y - They give the mouse position relative to your entire computer screen (monitor).
+alt,shift,ctrl key - return true if these buttonss are cliked otherwise false.
+-->
