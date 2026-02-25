@@ -1,8 +1,7 @@
 <!-- event - is an action that happens in browser. clicking a button moving mouse , pressing key , submiting form , loading page. -->
 <!-- Java Script can detect these events and respond to them. -->
-<!-- Types of events Mouse - (Click,dblClick,mouseover,mouseout)
-                     Keyboard - (KeyDown,KeyUp),
-                     Browser Events - (Load,Resize,Scroll) -->
+<!-- Types of events Mouse - (Click,dblClick,mouseover,mouseout) Keyboard - (KeyDown,KeyUp),Browser Events - (Load,Resize,Scroll) -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,6 +89,7 @@
 
     document.getElementById("google").addEventListener("click", (e) => { console.log("google Clicked"); e.preventDefault() })
 
+    // <!-- Home activity remove the image after click -->
     document.querySelectorAll("li").forEach(li => {
         li.addEventListener("click", () => {
             li.remove()
@@ -105,17 +105,26 @@
 
 </html>
 
-<!-- Home activity remove the image after click -->
-<!-- 
-home activity 
+<!-- home activity 
+
 jQuery - A JavaScript library that simplifies DOM, events, and AJAX with less code. $(#btn).click(()=> log("Clicked")))
+
 type - which type of event.
+
 timestamp - return time of event occurs in ms.
+
 defalut prevented - preventDefault() stops the browser’s default behaviour for that event.
+
 target - it returns exact HTML element.
+
 source element - same as target used in old browsers.
+
 current target - who is handling the event it is may be parent
+
 clientx,y - They give the mouse position inside the browser’s visible area (viewport).
+
 screen x,y - They give the mouse position relative to your entire computer screen (monitor).
+
 alt,shift,ctrl key - return true if these buttonss are cliked otherwise false.
+
 -->
