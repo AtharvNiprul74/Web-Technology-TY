@@ -1,0 +1,18 @@
+Express is a minimal and flexible web application framework for . that simplifies the development of web server and apis.
+it provides features such as routing , middleware support , request and response handling , template rendaring , REST API's creation.
+
+1.Diff btn package.json and package-lock.json
+2.Diff Dev dependancies and dependancies.
+
+Routing in Express:
+    Referers to determining how an application response to client request for specific URL and HTTP method.
+
+Componenets 
+1.URL path
+2.HTTP method
+3.Handler function
+
+Create 3-4 routes
+
+3.Create something 
+4.HTTP methods
