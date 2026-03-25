@@ -2,7 +2,16 @@ Express is a minimal and flexible web application framework for . that simplifie
 it provides features such as routing , middleware support , request and response handling , template rendaring , REST API's creation.
 
 1.Diff btn package.json and package-lock.json
+package.json serves as a manifest for a Node.js project, detailing metadata, s
+cripts, and a list of generalized dependencies with version ranges. 
+In contrast, package-lock.json is an automatically generated lockfile that records 
+the exact versions and download sources of all installed packages and 
+their nested dependencies, ensuring consistent and reproducible builds across 
+different environments.
+
 2.Diff Dev dependancies and dependancies.
+Dependencies are packages your app needs to run in production (e.g., Express in a Node app).
+DevDependencies are only needed during development (e.g., testing libraries, linters, build tools).
 
 Routing in Express:
     Referers to determining how an application response to client request for specific URL and HTTP method.
