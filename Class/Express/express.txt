@@ -25,3 +25,13 @@ Create 3-4 routes
 
 3.Create something 
 4.HTTP methods
+
+middleware in JS Express:
+    is a function that execute during request before sending the final response.
+    They have aceess to request,response and next.
+
+Activities:
+    Why we use middlewares?
+    What are the types of middlewares?
+    what is a benefits of middlewares?
+    When we use middlewares in industry level?

@@ -2,6 +2,16 @@ const express = require("express");
 
 const app = express();
 
+// function middleware(req,res,next)
+// {
+//     console.log(req.url)
+//     next()
+// }
+
+// app.use(middleware)
+
+app.use((req,res,next) => { console.log("Data Received",new Date()); next()})
+
 // Home
 app.get("/", async (req, res) => {
      res.send(`
