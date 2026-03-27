@@ -1,0 +1,16 @@
+T.E. allows developer to generate dynamic web pages using data from the server. insted of static web pages we make dynamic web pages.
+ejs
+pug
+handle bars
+
+why ?
+they help in dynamic content,code resuability , seperate from html.
+
+1.npm install ejs.
+2.index.js  
+
+Activities:
+1.T.E. EJS 
+2.Static files 
+3.Express router
+4.complete flow of express.
