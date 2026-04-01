@@ -1,0 +1,12 @@
+angular - is a type script based froentend framework developed by google.
+it helps us build a single page application.(SPA)
+
+SPA?
+where the page does not fully reload when navigation btn diff views.
+
+Tools:
+    1.Node JS
+    2.npm
+    3.Angular CLI
+
+CLI - To create and manage Angular apps.
