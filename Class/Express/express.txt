@@ -31,7 +31,27 @@ middleware in JS Express:
     They have aceess to request,response and next.
 
 Activities:
-    Why we use middlewares?
-    What are the types of middlewares?
-    what is a benefits of middlewares?
-    When we use middlewares in industry level?
+Q1)Why we use middlewares?
+ - Middleware is used to process requests before they reach the final route handler.
+   It can handle tasks like authentication, logging, validation, or modifying requests/responses.
+    
+Q2)What are the types of middlewares?
+ - In Express.js, middleware types are mainly:
+   1.Application-level middleware – Used across the entire app (e.g., logging, authentication).
+   2.Router-level middleware – Applied to specific routes using Express Router.
+   3.Built-in middleware – Provided by Express (like express.json() for parsing JSON).
+   4.Third-party middleware – External packages (like morgan, cors).
+   5.Error-handling middleware – Handles errors (defined with 4 parameters: err, req, res, next).
+
+Q3)what are a benefits of middlewares?
+ - Code reusability – Write once (e.g., auth, logging) and use in multiple routes.
+   Better organization – Keeps route logic clean and separated.
+   Request processing control – You can modify request/response before reaching the final handler.
+   Error handling – Centralized way to catch and manage errors.
+
+Q4)When we use middlewares in industry level?
+ - Authentication & Authorization – Check login, JWT tokens, user roles before allowing access.
+   Logging & Monitoring – Track requests, errors, and performance for debugging and analytics.
+   Validation & Sanitization – Validate user input (forms, APIs) to prevent invalid or harmful data.
+   Error Handling – Centralized handling of server errors without breaking the app.
+   Security – Add headers, prevent attacks (CORS, rate limiting, etc.).

@@ -62,4 +62,4 @@ checkLogin.then(user => console.log(user)).catch(err => console.log(err))
 
 //how to use fetch in async and await
 // fetch user display names in html list, fetch posts show only first 5 records , create fake prmoise resolve aftrt 3 sec reject 3 sec
-// userNames.html
+//Code is in file -> userNames.html

@@ -10,3 +10,10 @@ Tools:
     3.Angular CLI
 
 CLI - To create and manage Angular apps.
+
+Q)
+1.How to create angular project.
+ 1.check for node js is installed.
+ 2.install Angular CLI using command npm install -g @angular/CLI
+ 3.ng new <app_name>
+ 4.ng serve
