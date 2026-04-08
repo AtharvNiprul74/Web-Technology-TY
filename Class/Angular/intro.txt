@@ -17,3 +17,29 @@ Q)
  2.install Angular CLI using command npm install -g @angular/CLI
  3.ng new <app_name>
  4.ng serve
+
+Package json - packages list. include dependancies and dev depedancies.
+Dev depedancies - local development.
+depedancies - prdocution.
+angular.json - project configration file.
+style.css - global CSS file.
+.gitignore - file folders execute from version control.
+tsconfig.json - typescript configration.
+index.html - main file loads angular.
+app.config.ts - app configration.
+main.ts - entry point of application.
+
+Components:
+Is a UI block or structure,when we create on component 
+ 1.ng generate component <component_name>
+ 2.ng g c <component>
+
+ 4 files are created - html css ts spec.ts testing file
+
+Data Binding - connect UI to Code.
+Types-
+    One Way - Interpolation - Show data from TS in HTML {{value}}
+              Property Binding 
+              Event Binding
+    
+    Two Way - 
