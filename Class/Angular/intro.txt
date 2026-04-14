@@ -55,7 +55,52 @@ Types:
 1.structural Directives:
     Chnage the structure of your page. ngif ngfor ngswitch // home Activity 1:how to use it 
 
+1.Interpolation:
+    ex-<td>{{studData.name}}</td>
+
+2.Property binding:
+    [value]="showStudent?'Hide Student':'Show Student'"
+
+3.Event binding:
+    <form (ngSubmit) = "addStudent()">
+
+4.ngModal:
+    <input [(ngModel)]="name" name = "name" type="text" class="form-control" id="studentName" placeholder="Enter Student Name:">
+
 Q)How we can use if-else,for loop,switch in angular with exmple.
+
+ngIf:
+- Use *ngIf when you want to show or hide an element based on a condition (true/false).
+Best for simple conditions like login status, toggling UI, showing error messages.
+It removes/adds element from DOM, so good for performance when not needed.
+ex-
+<div *ngIf = "showStudent">
+<h5>Name:{{fname}}</h5>
+<h5>Age:{{age}}</h5>
+<h5>Course:{{course}}</h5>
+
+used to hide or show
+
+ngFor:
+- When to use *ngFor
+Use *ngFor when you want to loop through a list/array and display data.
+Best for repeating UI elements like lists, tables, cards (students, products, etc.).
+It creates a template for each item in the array dynamically.
+
+ex-
+<tbody>
+    <tr *ngFor = "let studData of studentList">
+        <td>{{studData.name}}</td>
+        <td>{{studData.age}}</td>
+        <td>{{studData.course}}</td>
+    </tr>
+  </tbody>
+used to display list like things.
+
+-ngswitch
+Use ngSwitch when you have multiple conditions (more than 2 cases).
+Cleaner than using many *ngIf statements.
+Best for handling different views based on one variable (like status, role, category).
 
 * Routing:
     navigation btn one page to another page is called routing.

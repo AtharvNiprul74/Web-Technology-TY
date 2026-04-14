@@ -1,0 +1,149 @@
+1. Interpolation {{ }}
+✅ Use When:
+
+👉 You want to display data (read-only)
+
+<p>{{ fname }}</p>
+
+✔ Show text
+✔ Show numbers
+✔ Simple output
+
+❌ Don’t use for attributes (like src, value)
+
+2. Property Binding [ ]
+✅ Use When:
+
+👉 You want to set HTML properties dynamically
+
+<img [src]="imageUrl">
+<input [value]="name">
+<button [disabled]="isDisabled">
+
+✔ Dynamic attributes
+✔ DOM properties
+
+3. Event Binding ( )
+✅ Use When:
+
+👉 You want to handle user actions
+
+<button (click)="addStudent()"></button>
+
+✔ Click
+✔ Input events
+✔ Form submit
+
+🔹 4. Two-Way Binding [(ngModel)]
+✅ Use When:
+
+👉 You want input ↔ TS sync
+
+<input [(ngModel)]="name">
+
+✔ Forms
+✔ User input
+✔ Live updates
+
+⚠️ Requires FormsModule
+
+🔹 5. Structural Directives
+👉 *ngIf
+✅ Use When:
+
+👉 Show / hide UI
+
+<div *ngIf="isVisible"></div>
+
+*ngFor
+✅ Use When:
+
+👉 Loop data
+
+<div *ngFor="let s of students"></div>
+
+6. Attribute Directives
+👉 ngClass
+<div [ngClass]="{ active: isActive }"></div>
+👉 ngStyle
+<div [ngStyle]="{ color: 'red' }"></div>
+
+👉 Use for styling dynamically
+
+❌ 1. Using ngModel without FormsModule
+
+👉 Fix: Import FormsModule
+
+❌ 2. Using *ngIf, *ngFor without CommonModule
+
+👉 Fix: Import CommonModule
+
+❌ 3. Wrong syntax in ngFor
+❌ let item for of list
+✅ let item of list
+❌ 4. Using {{ }} inside <input>
+❌ <input value="{{name}}">
+✅ <input [value]="name">
+❌ 5. Using ngModel on <div>
+
+👉 Not possible ❌
+
+
+✅ Where You CAN Use *ngIf / *ngFor
+
+👉 You can use them on ANY HTML element that renders UI
+
+🔹 1. Normal HTML Elements
+<div *ngIf="isVisible">Hello</div>
+
+<li *ngFor="let s of studentList">
+  {{ s.name }}
+</li>
+
+✔ Most common usage
+✔ Works perfectly
+
+2. Angular Components
+<app-student-card *ngIf="isVisible"></app-student-card>
+
+<app-student-card *ngFor="let s of studentList"></app-student-card>
+
+👉 Controls rendering of entire component
+
+3. Tables (Very Important)
+<tr *ngFor="let s of studentList">
+  <td>{{ s.name }}</td>
+</tr>
+
+👉 Very common in real apps 💯
+
+🔹 4. <ng-container> (Advanced but useful)
+<ng-container *ngIf="isLoggedIn">
+  <p>Welcome</p>
+</ng-container>
+
+👉 No extra DOM element created 🔥
+
+❌ Where You CANNOT / SHOULD NOT Use
+❌ 1. Multiple Structural Directives on SAME Element
+❌ WRONG
+<div *ngIf="isVisible" *ngFor="let s of list"></div>
+
+👉 Angular error ❌
+
+2. Inside Attribute Binding
+❌ WRONG
+<input [*ngIf]="condition">
+
+👉 *ngIf is NOT a property ❌
+
+3. Inside <input>, <img> incorrectly
+❌ WRONG
+<input *ngFor="let s of list">
+
+👉 Technically possible, but bad practice
+
+👉 Because:
+
+Inputs are for user input
+Not for list rendering
