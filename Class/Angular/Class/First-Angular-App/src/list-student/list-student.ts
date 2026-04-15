@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StudentService } from '../Services/student-service';
 
 @Component({
   selector: 'app-list-student',
@@ -8,5 +9,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list-student.css',
 })
 export class ListStudent {
-  studentList = JSON.parse(localStorage.getItem("Student Data") || "[]")
+  cars: string[] = ["BMW","Merecedes","Opel"]
+  studentList:any[] = [] 
+
+  constructor(private studentService:StudentService)
+  {
+
+  }
+  ngOnInit()
+    {
+      this.studentList = this.studentService.getStudents()
+    }
 }

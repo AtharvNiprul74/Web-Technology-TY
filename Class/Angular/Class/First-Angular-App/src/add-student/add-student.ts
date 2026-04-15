@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { StudentService } from '../Services/student-service';
 
 @Component({
   selector: 'app-add-student',
@@ -11,19 +12,21 @@ export class AddStudent {
   name:string = ""
   age:number = 0
   course:string = ""
+  studentList:any[] = []
+
+  constructor(private studentService:StudentService)
+  {
+    
+  }
 
   addStudent = () => {
-    const getStudentData = JSON.parse(localStorage.getItem("Student Data") || "[]")
-
     const studentData = {
       name:this.name,
       age:this.age,
       course:this.course
     }
-
-    getStudentData.push(studentData)
-
-    localStorage.setItem("Student Data",JSON.stringify(getStudentData))
+    
+    this.studentService.addStudent(studentData)
 
     this.name=""
     this.age=0

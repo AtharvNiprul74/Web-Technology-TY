@@ -104,3 +104,15 @@ Best for handling different views based on one variable (like status, role, cate
 
 * Routing:
     navigation btn one page to another page is called routing.
+
+Activity for Directives:
+    hide div for show and hide
+    toggl btn 
+    num1==num2 show color
+    div dropdown selected value displayed
+
+*Services:
+    is like a helper class it stores and share logic so many components can use instead of writing the same code again.
+
+Life Cycle Hooks
+ngOnInit - is hook its run automatically when page load.

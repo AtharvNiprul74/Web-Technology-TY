@@ -1,0 +1,16 @@
+<div class="container card">
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Course</td>
+            </tr>
+        </thead>
+        <tr *ngFor="let stud of studentList">
+            <td>{{stud.name}}</td>
+            <td>{{stud.age}}</td>
+            <td>{{stud.course}}</td>
+        </tr>
+    </table>
+</div>
