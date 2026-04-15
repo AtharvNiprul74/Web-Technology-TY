@@ -116,3 +116,5 @@ Activity for Directives:
 
 Life Cycle Hooks
 ngOnInit - is hook its run automatically when page load.
+
+write 2 eaxmple services with angular. and learn more about dependancy injection
