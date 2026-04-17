@@ -11,14 +11,8 @@ import { StudentData } from '../Services/student-data';
 
 export class ListStudent {
   studentList:any[] = []
-  constructor(private studList:StudentData)
+  constructor(private stud:StudentData)
   {
-    studList.getStudentList()
-  }
-
-  
-  ngOnInit()
-  {
-    this.studentList = 
+    this.studentList = stud.getStudentList()
   }
 }
