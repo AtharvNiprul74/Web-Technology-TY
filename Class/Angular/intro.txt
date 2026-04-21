@@ -118,3 +118,8 @@ Life Cycle Hooks
 ngOnInit - is hook its run automatically when page load.
 
 write 2 eaxmple services with angular. and learn more about dependancy injection
+
+#)Routing
+    Step 1:app.route.ts add routes path and component.
+    Step 2:app.ts RouterOutlet and RouterLink.
+    Step 3:app.html use routeroulet.
