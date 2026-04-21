@@ -1,1 +1,8 @@
 it is JS library made by meta to build a fast and interactive user interfaces.
+It is SPA. ex- Insta, Facebook
+
+why do we use react?
+problem with JS?
+Full page reload.
+complex dom manipulation.
+hard to manage large apps.
