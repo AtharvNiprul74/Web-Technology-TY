@@ -3,9 +3,9 @@ It is SPA. ex- Insta, Facebook
 
 why do we use react?
 problem with JS?
-Full page reload.
-complex dom manipulation.
-hard to manage large apps.
+- Full page reload.
+- complex dom manipulation.
+- hard to manage large apps.
 
 Update only part and use resuable components.
 
@@ -50,10 +50,54 @@ Student name="Atharv"
 
 Activity:
     What is components types of components.
+    - A component in React is a reusable piece of UI (User Interface).
+
     where we use components in react.
+    - We use components to:
+        - Build UI in small reusable parts
+        - Separate logic (modular code)
+        - Improve readability and maintainability
+
     with two exmaples.
+    - Functional Components
+        Simple JavaScript functions
+        Use hooks (like useState, useEffect)
+
+    - Class Components
+        ES6 classes
+        Use lifecycle methods
 
     What is prop?
+    - Props (Properties) are used to pass data from one component to another.
+      Usually from parent → child
+    
     why we use props?
+    - To make components dynamic
+      To pass data (like name, age, etc.)
+      To reuse the same component with different values
+
     types of props?
+    1. Simple Props (Normal Data)
+        String, number, boolean
+    2. Complex Props
+        Object, Array, Function
+    
     with two exmaples.
+   1.function Student(props) {
+        return <h3>Name: {props.name}</h3>;
+        }
+
+    <Student name="Atharv" />
+
+   2.function Student(props) {
+    return(
+            <div>
+                <h3>Name: {props.name}</h3>
+                <p>Age: {props.age}</p>
+            </div>
+        );
+    }
+
+    <Student name="Atharv" age={21} />
+
+
