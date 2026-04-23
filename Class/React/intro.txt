@@ -100,4 +100,3 @@ Activity:
 
     <Student name="Atharv" age={21} />
 
-
