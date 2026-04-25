@@ -1,10 +1,5 @@
-function Contact()
-{
-    return(
-        <>
-            <h1>Contact Page</h1>
-        </>
-    )
+function Contact() {
+    return 
+    <h2>Contact Page</h2>
 }
-
-export default Contact
+export default Contact;

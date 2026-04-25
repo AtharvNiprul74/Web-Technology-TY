@@ -1,0 +1,101 @@
+React -----
+
+    -   React is a JavaScript library created by Meta.
+    -   It is used to build an fast and interactive user interafaces.
+    -   It is single page application.
+    -   Page does not realod , it conatin change. 
+    -   Ex - intstagram, facebook.
+
+
+why do we use react ----
+
+    problem with traditional JS ------
+        -   full page reload 
+        -   complex DOM manipulation
+        -   hard to manage large application
+
+    By React -----
+        -   update only requird parts
+        -   use reusable componenets
+
+
+core concept -- Virtual DOM -----
+
+    -   react creates copy of real DOM, measn virtual DOM
+    -   when data changes, react upadte virtual DOM
+    -   update only changed the part in real DOM
+    -   use -
+            -   High performance 
+
+
+vite  ---- fast build tool
+npm intall ---- intall dependancies
+npm run dev  ---- start sever
+
+
+Step to create React project ----
+
+step 1 --- check versions 
+    node -v
+    npm -v
+
+step 2 --- 
+    npx create react-app project_name ( older version )
+    npm create vite@latest App_name
+
+
+index.html ---
+main.jsx --- 
+app.jsx --- 
+
+jsx ---- 
+    -   JavaScript + xml
+    -   It allows to us write html code inside the JS
+    -   ex -
+            const element = <h1> Hello React </h1>
+
+Rules --- 
+    1. must retrun single parent
+    2. use scope brackets {} for JS
+
+
+Componenets --- 
+    -   It is heart of react
+    -   There is one componenet --- functional componenet
+
+functional componenet ----
+ex -
+    function student () {
+        return <h1>This is function componenet</h1>
+    }
+
+use componenet ----
+ex -
+    function app() {  
+        return <student/>
+    }
+
+
+Props (properties) -----
+
+    -   Props means data passing from parent ( app() ) to child ( student() ).
+    -   ex -
+            function app() {  
+                return <student fname = 'Trupti' />
+            }
+
+            function student(props) {
+                return <h1>Name : {props.fname} </h2>
+            }
+
+
+
+
+Activity ------
+    1.  different between angular and react 
+    2.  market hype ?
+    3.  why react created ?
+    4.  what is componenets. Types of componenets.
+    5.  where we use componenets is react. With 2 examples.
+    6.  what is props ? why we use props ? 
+    7.  Types of props. With 2 examples.

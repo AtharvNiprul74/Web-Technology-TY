@@ -1,0 +1,23 @@
+State ---
+
+    -   data that can change
+    -   value changes over time when state changes, scree/UI updates automatically.
+
+why we use state ?
+    because data chnages!
+
+    without state ----
+        without state value can not update/change on screen.
+
+    with state -----
+        UI updates automatically
+
+Props ----
+    passed from parent(app.jsx) to child 
+    react-only
+    used for communication
+
+State ----
+    Managed inside components
+    can change
+    used for dynamic UI
