@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h2>Add Event</h2>
+
+  <input class="form-control mb-2" [(ngModel)]="event.title" placeholder="Title">
+  <input class="form-control mb-2" [(ngModel)]="event.club" placeholder="Club">
+  <input class="form-control mb-2" type="date" [(ngModel)]="event.date">
+  <textarea class="form-control mb-2" [(ngModel)]="event.description"></textarea>
+
+  <button class="btn btn-success" (click)="add()">Add</button>
+</div>

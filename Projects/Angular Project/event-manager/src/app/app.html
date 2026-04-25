@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Event Manager</a>
+
+      <div>
+        <a routerLink="/" class="btn btn-outline-light me-2">Home</a>
+        <a routerLink="/add" class="btn btn-outline-success me-2">Add Event</a>
+        <a routerLink="/my" class="btn btn-outline-warning me-2">My Events</a>
+        <a routerLink="/login" class="btn btn-outline-info me-2">Login</a>
+        <a routerLink="/register" class="btn btn-outline-light">Register</a>
+        <a routerLink="/logout" class="btn btn-outline-denger">Lohout</a>
+        <button (click)="logout()" class="btn btn-danger">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card mt-4 p-3 shadow">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
