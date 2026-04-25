@@ -1,17 +1,27 @@
-<div class="container card my-5">
-    <h1 class="my-2">Student Info</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <td scope="col">Name</td>
-                <td scope="col">Age</td>
-                <td scope="col">Course</td>
-            </tr>
-        </thead>
-        <tr *ngFor="let stud of studentList">
-            <td>{{stud.name}}</td>
-            <td>{{stud.age}}</td>
-            <td>{{stud.course}}</td>
+<div class="container my-5">
+  <div class="card shadow-sm p-4">
+    
+    <h2 class="mb-4">Student Info</h2>
+
+    <table class="table table-hover table-striped align-middle">
+      
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Course</th>
         </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let stud of studentList">
+          <td>{{stud.name}}</td>
+          <td>{{stud.age}}</td>
+          <td>{{stud.course}}</td>
+        </tr>
+      </tbody>
+
     </table>
+
+  </div>
 </div>
