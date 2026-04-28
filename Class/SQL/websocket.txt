@@ -17,4 +17,16 @@ installation:
     npm install ws
 
 Activities:
-    deep study web socket understand ws with eaxmple
+    deep study web socket understand ws with eaxmple.
+    -WebSocket is a protocol that enables full-duplex, real-time communication between client and server over a single persistent TCP connection.
+    -It starts with an HTTP upgrade handshake and then keeps the connection open for continuous data exchange.
+    -Unlike HTTP, it avoids repeated requests, giving low latency and efficient communication.
+    -It is widely used in chat apps, live notifications, and online gaming.
+
+    working:
+        Client sends HTTP request with Upgrade: websocket
+        Server accepts → connection becomes WebSocket
+        Connection stays OPEN
+        Both sides can send data anytime (no request-response waiting)
+
+        For example, in a chat app, when one user sends a message, all connected users receive it instantly using WebSocket.
